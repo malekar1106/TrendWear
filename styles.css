@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner-overlay {
+    background: url('hpg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); 
+    transform: scale(1.1); 
+    z-index: -3; 
+    opacity: 0.8; /* Optional: Makes the blur effect slightly softer */
+}
+
+.banner-content {
+    max-width: 600px;
+    color: #fff;
+    z-index: 1; /* Ensures the content is above the blurred background */
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ff5a5f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff3035;
+}
+
+
+
+/* Services Section Styles */
+.services {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex-basis: 29%;
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #ff5a5f;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 50px 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    flex-basis: 29%;
+    margin: 10px;
+    background: #444;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+}
+
+/* FAQ Section Styles */
+.faq {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.faq h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.faq-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.faq-item i {
+    color: #ff5a5f;
+}
+
+
+/* Contact Form Styles */
+.contact {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button.btn {
+    width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ff5a5f;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-list, .testimonial-list {
+        flex-direction: column;
+    }
+
+    .service, .testimonial {
+        flex-basis: 100%;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
